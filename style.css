@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Ubuntu", sans-serif;
+}
+#container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #71cbff;
+}
+#grid-container {
+  height: 900px;
+  width: 900px;
+  display: flex;
+  flex-direction: column;
+  border: 1px #000 solid;
+  background-color: #ffffff;
+
+}
+.row-container {
+    flex: 1;
+    display: flex;
+}
+.square {
+  flex: 1;
+  border: 1px #2e2e2e solid;
+}
+
+#section-right {
+    background-color: rgb(71, 199, 109);
+    width: 900px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+#section-right h2 {font-size: 175px;}
+#grid-size-btn, #hover-toggle-btn {
+    font-size: 65px;
+    padding: 25px 45px;
+    border-radius: 16px;
+    background-color: rgb(0, 0, 0);
+    color: #fff;
+}
+
+
+#grid-size-popup {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    
+    height: 100%;
+    width: 100%;
+
+    background: rgba(0, 0, 0, 0.5);
+}
+#grid-size-options {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+
+    position: fixed;
+    z-index: 2;
+    top: 30%;
+    right: 30%;
+    bottom: 30%;
+    left: 30%;
+
+    height: 40%;
+    width: 40%;
+    background: #fff;
+    border-radius: 20px;
+}
+#close-popup-btn {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    border: none;
+    background-color: rgb(255, 109, 109);
+    color: #fff;
+    font-weight: 1000;
+}
+#rows-cols-val {
+    font-size: 20px;
+    padding: 4px;
+    border-radius: 5px;
+}
+#rows-cols-submit {
+    font-size: 20px;
+    padding: 10px 30px;
+    border-radius: 15px;
+    font-weight: 600;
+    background-color: #000;
+    color: #fff;
+}
+#error-case {display: none;}
+
+#default-color-btn, #rainbow-color-btn, #erase-tool-btn, #clear-grid-btn {
+    font-size: 30px;
+    padding: 20px 40px;
+    border-radius: 16px;
+    background-color: #000;
+    color: #fff;
+}
+
+
+
+
+
+
+
+
