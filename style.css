@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Ubuntu", sans-serif;
+}
+#container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #71cbff;
+}
+#grid-container {
+  height: 900px;
+  width: 900px;
+  display: flex;
+  flex-direction: column;
+  border: 1px #000 solid;
+  background-color: #ffffff;
+
+}
+.row-container {
+    flex: 1;
+    display: flex;
+}
+.square {
+  flex: 1;
+  border: 1px #2e2e2e solid;
+}
+
+#section-right {
+    height: 900px;
+    width: 900px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    background-color: #47c76d;
+}
+#section-right h2 {font-size: 175px;}
+#grid-size-btn {
+    font-weight: 1000;
+    font-size: 60px;
+    height: 150px;
+    width: 550px;
+    border-radius: 16px;
+    background-color: rgb(0, 0, 0);
+    color: #fff;
+}
+#hover-options, #erase-options {
+    display: flex;
+    gap: 16px;
+}
+#default-color-btn, #rainbow-color-btn, #erase-tool-btn, #clear-grid-btn {
+    width: 267px;
+    height: 75px;
+    font-size: 30px;
+    font-weight: 1000;
+    border: none;
+    border-radius: 16px;
+    color: #fff;
+}
+#default-color-btn {background-color: #000;}
+#rainbow-color-btn {animation: rainbow 2s infinite alternate;}
+@keyframes rainbow {
+    0% {background-color: red;}
+    16.66% {background-color: red;}
+    33.33% {background-color: orange;}
+    50% {background-color: yellow;}
+    66.66% {background-color: green;}
+    83.33% {background-color: blue;}
+    100% {background-color: purple;}
+}
+#erase-tool-btn {background-color: #ff9292;}
+#clear-grid-btn {background-color: #d30000;}
+
+#grid-size-popup {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    
+    height: 100%;
+    width: 100%;
+
+    background: rgba(0, 0, 0, 0.5);
+}
+#grid-size-options {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+
+    position: fixed;
+    z-index: 2;
+    top: 30%;
+    right: 30%;
+    bottom: 30%;
+    left: 30%;
+
+    height: 40%;
+    width: 40%;
+    background: #fff;
+    border-radius: 20px;
+}
+#close-popup-btn {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    border: none;
+    background-color: #ff6d6d;
+    color: #fff;
+    font-weight: 1000;
+}
+#rows-cols-val {
+    font-size: 20px;
+    padding: 4px;
+    border-radius: 5px;
+}
+#rows-cols-submit {
+    font-size: 20px;
+    font-weight: 600;
+    padding: 10px 30px;
+    border-radius: 15px;
+    background-color: #000;
+    color: #fff;
+}
+#error-case {display: none;}
+
+
+
+
+
+
+
+
+
